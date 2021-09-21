@@ -50,7 +50,7 @@ width = main_window.winfo_screenwidth()
 height = main_window.winfo_screenheight()
 main_window.title("File Deletor")
 main_window.resizable(0, 0)
-# main_window.iconbitmap("delete file.ico")
+main_window.iconbitmap("delete file.ico")
 
 set_op_window_width = 500
 set_op_window_height = 350
@@ -131,7 +131,7 @@ def deleteFiles():
 def onHelp():
     helpWindow = Tk()
     helpWindow.title("Help")
-    # helpWindow.iconbitmap("help.ico")
+    helpWindow.iconbitmap("help.ico")
     content = Label(helpWindow, text=helpText)
     content.grid(row=0, column=0)
     helpWindow.mainloop()
